@@ -11,11 +11,13 @@ class _RollDiceState extends State<RollDice> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Roll Dice'),
-      ),
-      body: const Center(
-        child: Text('Roll Dice'),
+      body: Container(
+        decoration: const BoxDecoration(
+          color: Colors.blue,
+        ),
+        child: const Center(
+          child: Text('HI'),
+        ),
       ),
     );
   }
