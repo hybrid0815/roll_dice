@@ -10,6 +10,13 @@ class RollDice extends StatefulWidget {
 class _RollDiceState extends State<RollDice> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Roll Dice'),
+      ),
+      body: const Center(
+        child: Text('Roll Dice'),
+      ),
+    );
   }
 }

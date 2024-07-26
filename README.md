@@ -64,9 +64,27 @@ void printName({required String? name, required int age}) {
 printName(name: null, age: 25);
 ```
 
-## const
-컴파일 타임시 값이 고정된다.
+## const & final
+**const**
 
-메모리를 줄인다.
+1. 초기화 되면 변경 불가능
+1. 컴파일 타임시 값이 정해진다.
+1. 메모리를 줄인다.
 
+**final**
 
+1. 초기화 되면 변경 불가능
+1. 런타임시 값이 정해진다.
+2. 객체일 경우 초기화는 에러 나지만 아이템을 변경하는것은 가능하다.
+
+```dart
+void main() {
+  const List<int> myConstVar = [1, 2, 3];
+  final List<int> myFinalVar = [1, 2, 3];
+
+  myConstVar[0] = 10; # Error: The element cannot be changed.
+  myFinalVar[0] = 10;
+  myFinalVar = [4, 5, 6]; # Error: The variable cannot be changed.
+}
+
+``` 
