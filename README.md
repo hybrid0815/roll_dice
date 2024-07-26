@@ -1,4 +1,7 @@
 # roll_dice
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/38fb425d-f2fa-449e-82d6-01bd315860b7" width="200"/>
+</p>
 
 ## Widgets
 - MaterialApp
@@ -150,3 +153,16 @@ Center(
 - 다만 그 상태를 변화 시키는 함수(`setState`)가 있는 위젯이 아니면 `StatelessWidget`을 사용한다.
 - `setState` 함수는 `build` 함수를 호출한다.
 - `StatefulWidget` 클래스의 멤버에 접근 할때는 `widget` 키워드를 사용한다.
+
+
+## DEBUG 삭제
+```dart
+void main() {
+  runApp(
+    const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: RollDice(),
+    ),
+  );
+}
+```

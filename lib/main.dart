@@ -4,6 +4,7 @@ import 'package:roll_dice/roll_dice.dart';
 void main() {
   runApp(
     const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: RollDice(),
     ),
   );
