@@ -1,24 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:roll_dice/colored_container.dart';
 
-class RollDice extends StatefulWidget {
+class RollDice extends StatelessWidget {
   const RollDice({super.key});
 
   @override
-  State<RollDice> createState() => _RollDiceState();
-}
-
-class _RollDiceState extends State<RollDice> {
-  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          color: Colors.blue,
-        ),
-        child: const Center(
-          child: Text('HI'),
-        ),
-      ),
+    return const Scaffold(
+      body: ColoredContainer(),
     );
   }
 }
